@@ -1,14 +1,9 @@
-import $ from 'jquery'
-import '../src/css/main.css'
+import Vue from 'vue/dist/vue.common'
 
-$(function(){
-  console.log('456')
-//  alert(123)
+import app from './compontent/App.vue'
+
+
+let vm = new Vue({
+    el: "#app",
+    render: c => c(app)
 })
-
-class Person{
-  static info = {name:'qian',age:'18'}
-}
-
-// var p1 = new Person();
-console.log(Person.info)
