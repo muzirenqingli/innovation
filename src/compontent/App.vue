@@ -1,12 +1,16 @@
 
 
 <template>
- <div>123</div>
+ <div>
+     <headercomp></headercomp>
+ </div>
 </template>
 
 <script>
+import headercomp from "./hadercomp.vue"
+
 export default {
-    
+    components:{headercomp}
 }
 </script>
 
