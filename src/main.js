@@ -1,7 +1,7 @@
-import Vue from 'vue/dist/vue.common'
+import Vue from 'vue'
 
 import app from './compontent/App.vue'
-
+import './css/basic.css'
 
 let vm = new Vue({
     el: "#app",

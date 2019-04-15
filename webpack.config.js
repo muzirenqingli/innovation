@@ -32,7 +32,7 @@ module.exports = {
         //         removeAttributeQuotes: true // 移除属性节点上的引号
         //     }
         // }),
-        // new cleanPlugin(['dist']), // 指定每次重新发布的时候，要先删除的文件夹
+        // new cleanPlugin(['dist']), // 指定每次重新发布的时候，要先删除的文件夹np
         // new webpack.optimize.CommonsChunkPlugin({ // 抽离第三方包的插件
         //     name: 'vendors', // 指定要从哪个入口名称中抽离文件
         //     filename: 'js/vendors.js' // 指定抽离出来的第三方包，文件名叫做什么
@@ -46,7 +46,7 @@ module.exports = {
         //     'process.env.NODE_ENV': '"production"',
         //     'myVar': '"1234"'
         // }),
-        // new extractTextPlugin('css/styles.css'), // 抽取CSS文件到单独的目录中
+        new extractTextPlugin('styles.css'), // 抽取CSS文件到单独的目录中
         // new optimizeCSSAssetsPlugin() // 自动压缩CSS
     ],
     module: { // 用来配置 非JS文件对应的loader的
@@ -55,7 +55,7 @@ module.exports = {
                 test: /\.css$/,
                 use: extractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: ['css-loader'],
+                    use: ['style-loader', 'css-loader'],
                     publicPath: '../' // 表示，如果将来生成的样式中，包含 路径，那么，需要自动在路径前面加上 ../ 前缀
                 })
             }, // 创建处理 css 文件的 loader 匹配规则

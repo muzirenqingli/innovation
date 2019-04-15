@@ -1,0 +1,25 @@
+/*清除文档类型声明中的默认属性*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}
+html{ background: #004670; position: relative; height: 100%; font-size: 100px;-webkit-text-size-adjust:none; width: 100%;}
+body{ width: 100%; height: 100%;}
+table{border-collapse:collapse;border-spacing:0;} 
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+q:before,q:after{content:'';}
+
+/*字体定义*/
+body {font-family:simsun,arial,helvetica,clean,sans-serif;}
+table {font-size:inherit;font:100%;} 
+/*通用定义*/
+.clear {clear:both;} 
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+*+html .clearfix {min-height: 1%;}
+
+.bold {font-weight:bold;}
+.error {color:red;}
