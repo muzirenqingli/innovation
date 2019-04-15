@@ -12,10 +12,9 @@ export default {
     components:{
         headercompontent
     }
-}
+
 </script>
 
 <style lang="less">
     
 </style>
-
